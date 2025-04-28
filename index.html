@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoubtHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    
+<!--navigation bar-->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <div class="logo"><img src="logo.png" alt="logo"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="blogs.html">Blog's</a></li>
+            <li><a href="solutions.html">Q&A's</a></li>
+            <li><a href="lecture.html">Lectures</a></li>
+            
+        </ul>
+    </nav>
+    
+<!--Tabs-->
+<div class="header">D.N. Patel college of Engineering Student Support Portal </div>
+    <div class="tabs">
+        <button class="tab active" onclick="showTab('ask')">Ask a Question</button>
+        <button class="tab active" onclick="showTab('notes')">Notes Sharing</button>
+    </div>
+
+<!--search-->
+<div class="search-container">
+    <input type="text" placeholder="Search question or notes..." class="search-box"> 
+</div>
+
+<!--Ask a question section-->
+<div id="ask" class="tab-content">
+    <div class="form-container">
+        <h2>Ask Your Question</h2>
+        
+        <label>Select Branch:</label>
+        <select>
+            <option>Choose  Your Branch</option>
+        </select>
+        <label>Select Subject</label>
+        <select>
+            <option>Choose Subject</option>
+        </select>
+        <label>Select Teacher</label>
+        <Select>
+            <option>Choose Teacher</option>
+        </Select>
+        <label>Your Question:</label>
+        <textarea placeholder="Type your doubt or question here..."></textarea>
+        <button class="submit-btn">Submit</button>
+    </div>
+</div>
+
+<!--notes sharing section-->
+<div id="notes" class="tab-content" style="display: none;">
+    <div class="form-container">
+        <h2>Notes Sharing</h2>
+        <p><strong>Upload Your Notes</strong></p>
+        <label>select Branch:</label>
+        <select>
+            <option>Choose Your Branch</option>
+        </select>
+        <label>Select Subject:</label>
+        <select>
+            <option>Choose Subject</option>
+        </select>
+        <label>Note Title:</label>
+        <input type="text"  placeholder="Enter a description title for your notes">
+        <label>Upload File:</label>
+        <input type="file">
+        <br>
+        <small>Supported formats: PDF, DOCX, PPT (Max: 10MB)</small>
+        <button class="upload-btn">Upload Notes</button>
+    </div>
+</div>
+<div class="about-section" id="about-section">
+    <h1>About DoubtHub</h1>
+    <p>
+        Welcome to <strong>DoubtHub</strong> — an Engineering Student Support Portal created especially for helping students with their academic doubts, note sharing, and career guidance.
+        <br><br>
+        Our mission is to provide a simple and organized platform where students can easily ask questions, share notes, read blogs, and access a growing knowledge base.
+        <br><br>
+        Currently developed for students of <strong>D.N. Patel College of Engineering</strong>, DoubtHub aims to expand and evolve with the needs of students.
+        <br><br>
+        Whether you are stuck on a tough question, looking for previous year papers, or seeking project ideas, DoubtHub is here to support your learning journey!
+    </p>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2025 DoubtHub | Developed by Rahil Khaleel</p>
+    <p>Contact: support@doubthub.com</p>
+</footer>
+
+</body>
+</html>
+<script src="script.js"></script>
+
+</body>
+</html>
