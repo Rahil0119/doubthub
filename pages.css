@@ -1,0 +1,147 @@
+.blog-container{
+    padding: 20px;
+}
+.blogs-post{
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.blogs-post h3 {
+    margin: 0 0 10px;
+}
+.blogs-post a{
+    color: blue;
+    text-decoration: underline;
+}
+/* ye yad rakhne ke liye style.css se diye hai textarea ko css
+.form-container select,
+.form-container textarea,
+.form-container input[type="text"],
+.form-container input[type="file"]{
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+textarea {
+    resize: vertical;
+    height: 100px;
+}*/
+/* Subject buttons */
+#subject-section button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+#subject-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Questions List */
+.subject-questions ul li {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #007bff;
+    
+}
+.subject-questions ul li:hover {
+    text-decoration: underline;
+}
+
+/* Answer Text */
+.answer {
+    margin: 20px;
+    font-size: 18px;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 30px;
+    background:url("bg.jpeg");
+    text-align: center;
+}
+
+.about-section h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    
+}
+
+/* Footer */
+.footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 16px;
+}
+/* Lectures Section */
+.lectures-section {
+    padding: 50px 30px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.lectures-section h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.lecture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lecture-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.lecture-card:hover {
+    transform: scale(1.05);
+}
+
+.lecture-card img {
+    width: 100%;
+    height: auto;
+}
+
+.lecture-card h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 15px;
+}
+
+/* Footer */
+.footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 16px;
+}

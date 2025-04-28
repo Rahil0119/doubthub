@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Engineering Q&A's</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+   <nav class="navbar">
+       <ul class="nav-list">
+           <div class="logo"><img src="logo.png" alt="logo"></div>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="blogs.html">Blog's</a></li>
+           <li><a href="solutions.html">Q&A's</a></li>   
+           <li><a href="lecture.html">Lectures</a></li>
+          
+       </ul>
+   </nav>
+   <div class="header">D.N. Patel college of Engineering Student Support Portal</div>
+<!--subject-->
+<div id="subject-section">
+    <h2>Select a Subject</h2>
+    <button onclick="showSubject('cao')">Computer Architecture & Organization</button>
+    <button onclick="showSubject('python')">Python</button>
+    <button onclick="showSubject('os')">Operating System</button>
+    <button onclick="showSubject('uhv')">Universal Human Values</button>
+    <button onclick="showSubject('daa')">Design & Analysis of Algorithm</button>
+</div>
+
+<!-- All Subjects' Questions Hidden Initially -->
+<div id="questions-container">
+
+    <!-- CAO Ques -->
+    <div class="subject-questions" id="cao" style="display: none;" >
+        <h2>Computer Architecture & Organization - Questions</h2>
+        <ul>
+            <li onclick="showAnswer('answer1')">What is pipelining?</li>
+            <li onclick="showAnswer('answer2')">What is cache memory?</li>
+            <li onclick="showAnswer('answer3')">Explain RISC vs CISC.</li>
+        </ul>
+    </div>
+
+    <!-- Python Ques-->
+    <div class="subject-questions" id="python" style="display: none;">
+        <h2>Python - Questions</h2>
+        <ul>
+            <li onclick="showAnswer('answer4')">What is a list?</li>
+            <li onclick="showAnswer('answer5')">Explain Python functions.</li>
+            <li onclick="showAnswer('answer6')">What is a dictionary?</li>
+        </ul>
+    </div>
+    <!--OS ques-->
+    <div class="subject-questions" id="os" style="display: none;">
+        <h2>Operating System - Queestions</h2>
+        <ul>
+            <li onclick="showAnswer('answer7')">What is the difference between a process and a thread?</li>
+            <li onclick="showAnswer('answer8')">What is deadlock? How can it be prevented in an operating system?</li>
+            <li onclick="showAnswer('answer9')">Explain the concept of virtual memory.</li>
+        </ul>
+</div>
+ <!--uhv ques-->
+ <div class="subject-questions" id="uhv" style="display: none;">
+    <h2>Universal Human Values - Queestions</h2>
+    <ul>
+        <li onclick="showAnswer('answer10')">What do you mean by Human values? why are they important.</li>
+        <li onclick="showAnswer('answer11')">Define the terms harmony in the self and harmony in the family.</li>
+        <li onclick="showAnswer('answer12')">What is the difference b/w needs of the body and needs of the self?</li>
+    </ul>
+</div>
+ <!--daa ques-->
+ <div class="subject-questions" id="daa" style="display: none;">
+    <h2>Design & Analysis of Algorithm - Queestions</h2>
+    <ul>
+        <li onclick="showAnswer('answer13')">What is an algorithm?</li>
+        <li onclick="showAnswer('answer14')">Define time complexity and space complexity.</li>
+        <li onclick="showAnswer('answer15')">Explain the Divide and conquer strategy.</li>
+    </ul>
+</div>
+ 
+<!-- All Answers Hidden Initially -->
+<div id="answers-container">
+    <div id="answer1" class="answer" style="display: none;">Pipelining is a technique where multiple instructions are overlapped during execution.</div>
+    <div id="answer2" class="answer" style="display: none;">Cache memory is a small, fast memory between CPU and RAM to speed up data access.</div>
+    <div id="answer3" class="answer" style="display: none;">RISC uses a small set of simple instructions; CISC uses complex instructions.</div>
+    <div id="answer4" class="answer" style="display: none;">A list is an ordered collection of items in Python.</div>
+    <div id="answer5" class="answer" style="display: none;">Functions are reusable blocks of code that perform a specific task.</div>
+    <div id="answer6" class="answer" style="display: none;">A dictionary is a collection of key-value pairs in Python.</div>
+    <div id="answer7" class="answer" style="display: none;">A process is an independent program in execution with its own memory, while 
+        a thread is a lightweight part of a process that shares the same memory.</div>
+    <div id="answer8" class="answer" style="display: none;">Deadlock is a condition where processes are stuck waiting for resources held by 
+        each other; it can be prevented by avoiding circular wait,using resources ordering, or applying safe state algorithms like Banker's algorithm. </div>
+    <div id="answer9" class="answer" style="display: none;">Virtual memory is a technique where secondary storage is used as an extention of RAM,
+        allowing programs to run even when physical memory is limited.</div>
+    <div id="answer10" class="answer" style="display: none;">Human values are principle like respect, trust, and care that behavior towards
+        living harmoniously with oneself and others.</div>
+    <div id="answer11" class="answer" style="display: none;">Harmony in the self means peace and clarity within thoughts and feelings, while
+        harmony in the family is about building trust, respect, and love among family members.</div>
+    <div id="answer12" class="answer" style="display: none;">Needs of the body are material and temporary like food and shelter, wherease needs 
+        of the self are non-physical and continuous like happiness and respect.</div>
+    <div id="answer13" class="answer" style="display: none;">An algorithm is a step-by-step method to solve a problem; a good algorithm is 
+        correct, rfficient, finite,clear, and has defined input and output.</div>
+    <div id="answer14" class="answer" style="display: none;">Time complexity measures how the running time of an algorithm increases with 
+        input size, and space complexity measures the amount of memory used.</div>
+    <div id="answer15" class="answer" style="display: none;">Divide and conquore is a strategy where a problem is broken into smaller 
+        subproblems, solved individually, and then combined, as seen in algorithms like Merge Sort.</div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
